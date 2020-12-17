@@ -3,23 +3,17 @@
 
 
 function greetingstudentName(){
+    
+
     var studentName = prompt("what is you name?"); 
-    alert ("Hello  " + studentName);
+    while (studentName==='') {
+        studentName = prompt("what is you name?"); 
+        
+    }
+  alert ("Hello  " + studentName);
+
 }
 
-greetingstudentName();
-
-
-//
-
-function welcomUnistudent(){
-var university = prompt("which university you are attending?");
-alert ("more than welcome");
-}
-
-welcomUnistudent();
-
-//
 
 function checkUninumber(){
 
@@ -29,8 +23,31 @@ function checkUninumber(){
             alert ("plz sign up first");
         
         }else {
-            alert (" re write your correct university number");
+            alert ("rewrite your university number correctly");
         }
     }
 
 }
+
+
+greetingstudentName();
+
+checkUninumber();
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
